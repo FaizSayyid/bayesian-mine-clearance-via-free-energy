@@ -16,23 +16,11 @@ The move with the lowest expected free energy is then selected.
 ### Sensor model
 
 
-\[
-\begin{array}{c|c|c}
-\text{True state} & \text{Sensor reads ``mine''} & \text{Sensor reads ``no mine''} \\
-\hline
-\textbf{Mine }(S=1) & P(o=1 \mid S=1) = 0.95 & P(o=0 \mid S=1) = 0.05 \\
-\textbf{Safe }(S=0) & P(o=1 \mid S=0) = 0.30 & P(o=0 \mid S=0) = 0.70 \\
-\end{array}
-\]
 
-We assume the manufacturer has tuned the sensor to minimize **false negatives**  
-\[
-P(o=0 \mid S=1) = 0.05
-\]
-at the cost of a higher **false positive rate**  
-\[
-P(o=1 \mid S=0) = 0.30.
-\]
+| True state | Sensor reads "mine" | Sensor reads "no mine" |
+|------------|----------------------|------------------------|
+| **Mine (S=1)** | `P(o=1 | S=1) = 0.95` | `P(o=0 | S=1) = 0.05` |
+| **Safe (S=0)** | `P(o=1 | S=0) = 0.30` | `P(o=0 | S=0) = 0.70` |
 
 ## Notebooks
 
