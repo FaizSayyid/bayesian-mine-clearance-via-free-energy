@@ -13,6 +13,15 @@ Written in haste.
 The robot holds a generative model of the world (beta-bernoulli over mine presence and a noisy mine sensor). At each stage we compute the posterior mine probabilities (the risk) and take off the difference between the prior entropy and the evidence waited entropy of what it expects if makes a move.
 The move with the lowest expected free energy is then selected.
 
+### Sensor model
+
+| True state | Sensor reads "mine" | Sensor reads "no mine" |
+|------------|----------------------|------------------------|
+| **Mine (S=1)** | P(o=1|S=1) = 0.95 | P(o=0|S=1) = 0.05 |
+| **Safe (S=0)** | P(o=1|S=0) = 0.30 | P(o=0|S=0) = 0.70 |
+
+In this sensor model we assume that the manufacturer has traded low false negatives for higher false positives.
+
 ## Notebooks
 
 - **naieve_EFE_no_revisit.ipynb** — the robot samples each tile at most once. Revisits confer no additional information.  
