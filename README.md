@@ -6,6 +6,8 @@ The robot balances:
 - **Epistemic value**: information gain from probing new cells.
 - **Extrinsic value**: risk of stepping on a mine.
 
+Written in haste.
+
 ---
 
 The robot holds a generative model of the world (beta-bernoulli over mine presence). At each stage we compute the posterior mine probabilities (the risk) and take off the difference between the prior entropy and the evidence waited entropy of what it expects if makes a move.
