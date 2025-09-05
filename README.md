@@ -15,8 +15,9 @@ EFE_revisit.ipynb: In this demo the robot can re-probe tiles. Revisits confer ad
 <p float="left">
   <img src="images/visit_pdf.png" width="45%" />
   <img src="images/revisit_pdf.png" width="45%" />
+   <img src="images/visit_board.png" width="45%" />
+  <img src="images/revisit_board.png" width="45%" />
 </p>
-
 ---
 
 ## Run the notebooks
