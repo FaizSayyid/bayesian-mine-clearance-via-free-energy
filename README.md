@@ -33,13 +33,13 @@ The robot balances:
   <img src="images/revisit_board.png" width="45%" />
 </p>
 
-*Visited map after exploration. Revisiting lets the robot safely explore more of the board.*
+*Ground truths of the boards.*
 
 ---
 
 ## Run the notebooks
 
-You can view the notebooks on GitHub or run them directly in Colab:
+You can view the notebooks on GitHub or run them in Colab:
 
 - **naieve_EFE_no_revisit.ipynb**  
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FaizSayyid/mine_clearance_via_free_energy/blob/main/naieve_EFE_no_revisit.ipynb)
