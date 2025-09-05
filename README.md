@@ -1,14 +1,19 @@
 # Expected Free Energy Minefield Demo
 
-This repo contains a simple of a robot exploring a noisy minefield using **expected free energy** (EFE).  
+This repo contains a simple demo of a robot exploring a noisy minefield using **expected free energy** (EFE) and Bayesian stats.
 
 The robot balances:
 - **Epistemic value**: information gain from probing new cells.
 - **Extrinsic value**: risk of stepping on a mine.
 
 ---
+naieve_EFE_no_revisit.ipynb: In this demo the robot can sample a new tile exactly once. Revisits confer no additional information.
+EFE_revisit.ipynb: In this demo the robot can re-probe tiles. Revisits confer additional information and a sharper posterior.
 
-## Run the notebook
+
+---
+
+## Run the notebooks
 
 You can view the notebook on GitHub, or **run it ** on colab:
 
