@@ -19,7 +19,7 @@ The move with the lowest expected free energy is then selected.
 
 | True state | Sensor reads "mine" | Sensor reads "no mine" |
 |------------|----------------------|------------------------|
-| **Mine (S=1)** | `P(o=1 | S=1) = 0.95` | `P(o=0 | S=1) = 0.05` |
+| **Mine (S=1)** | `P(o=1  <code>&#124;</code> S=1) = 0.95` | `P(o=0 | S=1) = 0.05` |
 | **Safe (S=0)** | `P(o=1 | S=0) = 0.30` | `P(o=0 | S=0) = 0.70` |
 
 ## Notebooks
