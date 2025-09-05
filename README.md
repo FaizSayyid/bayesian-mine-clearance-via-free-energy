@@ -10,6 +10,12 @@ The robot balances:
 naieve_EFE_no_revisit.ipynb: In this demo the robot can sample a new tile exactly once. Revisits confer no additional information. 
 EFE_revisit.ipynb: In this demo the robot can re-probe tiles. Revisits confer additional information and a sharper posterior. 
 
+### Single-visit vs. revisit
+
+<p float="left">
+  <img src="images/visit_pdf.png" width="45%" />
+  <img src="images/revisit_pdf.png" width="45%" />
+</p>
 
 ---
 
