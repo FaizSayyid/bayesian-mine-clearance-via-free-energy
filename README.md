@@ -24,6 +24,8 @@ The robot balances:
   <img src="images/revisit_pdf.png" width="45%" />
 </p>
 
+*Left: single-visit posterior stays diffuse. Right: revisits drive probabilities sharply toward 0/1.*
+
 **Boards**
 
 <p float="left">
@@ -31,11 +33,13 @@ The robot balances:
   <img src="images/revisit_board.png" width="45%" />
 </p>
 
+*Visited map after exploration. Revisiting lets the robot safely explore more of the board.*
+
 ---
 
 ## Run the notebooks
 
-You can view the notebooks on GitHub or run them in Colab:
+You can view the notebooks on GitHub or run them directly in Colab:
 
 - **naieve_EFE_no_revisit.ipynb**  
   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FaizSayyid/mine_clearance_via_free_energy/blob/main/naieve_EFE_no_revisit.ipynb)
