@@ -7,7 +7,7 @@ The robot balances:
 - **Extrinsic value**: risk of stepping on a mine.
 
 ---
-naieve_EFE_no_revisit.ipynb: In this demo the robot can sample a new tile exactly once. Revisits confer no additional information. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FaizSayyid/mine_clearance_via_free_energy/blob/main/naieve_EFE_no_revisit.ipynb)
+naieve_EFE_no_revisit.ipynb: In this demo the robot can sample a new tile exactly once. Revisits confer no additional information. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FaizSayyid/mine_clearance_via_free_energy/blob/main/naieve_EFE_no_revisit.ipynb)  
 EFE_revisit.ipynb: In this demo the robot can re-probe tiles. Revisits confer additional information and a sharper posterior. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/FaizSayyid/mine_clearance_via_free_energy/blob/main/EFE_revisit.ipynb)
 
 
