@@ -26,14 +26,18 @@ The sensor has a confusion matrix:
 
 ## Posterior update
 
-Let a be probability of reading a mine where there is indeed a mine present (0.95):
+Let a be probability of detecting a mine when there is a mine present (0.95):
 
 ![](https://latex.codecogs.com/png.latex?a%20%3D%20P(o%3D1%20%5Cmid%20S%3D1))  
 
-Let 1-a be the probability of reading a mine where there is no mine present:
+Let 1-a be the probability of not detecting a mine when there is a mine present 0.05:
 
 ![](https://latex.codecogs.com/png.latex?1-a%20%3D%20P(o%3D0%20%5Cmid%20S%3D1))  
+
+Let b be the probability of detecting a mine when there is no mine present (0.3)
 ![](https://latex.codecogs.com/png.latex?b%20%3D%20P(o%3D1%20%5Cmid%20S%3D0))  
+
+Let 1-b be the probability of not detecting a mine when there is no mine present (0.7)
 ![](https://latex.codecogs.com/png.latex?1-b%20%3D%20P(o%3D0%20%5Cmid%20S%3D0))  
 
 - If mine ($S=1$):
