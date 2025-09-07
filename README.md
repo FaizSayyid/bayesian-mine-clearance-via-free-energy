@@ -25,13 +25,8 @@ The sensor has a confusion matrix:
 ---
 
 ### Posterior update
-Given counts of positive and negative observations, the posterior is Beta:
 
-![](https://latex.codecogs.com/svg.image?%5Cpi%20%5Cmid%20D%20%5Csim%20%5Cmathrm%7BBeta%7D(%5Calpha_0%20&plus;%20%5Csum%20o,%20%5Cbeta_0%20&plus;%20%5Csum(1-o)))
-
-Posterior mean:
-
-![](https://latex.codecogs.com/svg.image?%5Chat%7B%5Cpi%7D%20%3D%20%5Cfrac%7B%5Calpha_0%20&plus;%20n_1%7D%7B%5Calpha_0%20&plus;%20%5Cbeta_0%20&plus;%20n_1%20&plus;%20n_0%7D)
+![posterior](https://latex.codecogs.com/png.latex?p%28s%5Cmid%20o%29%20%5Cpropto%20p%28o%5Cmid%20s%29%20p%28s%29)
 
 ---
 
