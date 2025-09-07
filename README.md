@@ -20,12 +20,6 @@ Each cell \(s_i \in \{0,1\}\) (mine or no mine) has a Beta–Bernoulli prior:
 
 The sensor has a confusion matrix:
 
-![](https://latex.codecogs.com/svg.image?P(o%3D1%20%7C%20s%3D1)%20%3D%20%5Calpha,%20%5Cquad%20P(o%3D0%20%7C%20s%3D1)%20%3D%201-%5Calpha)
-
-![](https://latex.codecogs.com/svg.image?P(o%3D1%20%7C%20s%3D0)%20%3D%20%5Cbeta,%20%5Cquad%20P(o%3D0%20%7C%20s%3D0)%20%3D%201-%5Cbeta)
-
-Rendered as a table:
-
 ![](https://latex.codecogs.com/svg.image?%5Cbegin%7Barray%7D%7Bc%7Ccc%7D%20%26%20%5Ctext%7BSensor%20reads%20%22mine%22%7D%20%26%20%5Ctext%7BSensor%20reads%20%22no%20mine%22%7D%20%5C%5C%5Chline%20%5Ctextbf%7BMine%20(s%3D1)%7D%20%26%20P(o%3D1%5Cmid%20s%3D1)%3D0.95%20%26%20P(o%3D0%5Cmid%20s%3D1)%3D0.05%20%5C%5C%20%5Ctextbf%7BSafe%20(s%3D0)%7D%20%26%20P(o%3D1%5Cmid%20s%3D0)%3D0.30%20%26%20P(o%3D0%5Cmid%20s%3D0)%3D0.70%20%5Cend%7Barray%7D)
 
 ---
