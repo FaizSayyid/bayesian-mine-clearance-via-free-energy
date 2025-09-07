@@ -12,7 +12,7 @@ Written in haste.
 
 ---
 
-## Generative model
+## Generative model of the minefield
 
 Each cell \(s_i \in \{0,1\}\) (mine or no mine) has a Beta–Bernoulli prior:
 
@@ -35,12 +35,14 @@ Let 1-a be the probability of not detecting a mine when there is a mine present 
 ![](https://latex.codecogs.com/png.latex?1-a%20%3D%20P(o%3D0%20%5Cmid%20S%3D1))  
 
 Let b be the probability of detecting a mine when there is no mine present (0.3)
+
 ![](https://latex.codecogs.com/png.latex?b%20%3D%20P(o%3D1%20%5Cmid%20S%3D0))  
 
 Let 1-b be the probability of not detecting a mine when there is no mine present (0.7)
+
 ![](https://latex.codecogs.com/png.latex?1-b%20%3D%20P(o%3D0%20%5Cmid%20S%3D0))  
 
-- If mine ($S=1$):
+Now we can define the likelihood of performing n mine detections with k detects and n-k non detects for a single cell:
 
 ![formula](https://latex.codecogs.com/png.latex?P(\text{data}\mid%20S%3D1)%20%3D%20a^{k}(1-a)^{n-k})
 
