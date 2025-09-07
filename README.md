@@ -42,11 +42,11 @@ Let 1-b be the probability of not detecting a mine when there is no mine present
 
 ![](https://latex.codecogs.com/png.latex?1-b%20%3D%20P(o%3D0%20%5Cmid%20S%3D0))  
 
-Now we can define the likelihood of performing n mine detections with k detects and n-k non detects for a single cell:
+Now we can define the likelihood of performing n mine detections with k detects and n-k non detects for a single cell **given there is a mine there**:
 
 ![formula](https://latex.codecogs.com/png.latex?P(\text{data}\mid%20S%3D1)%20%3D%20a^{k}(1-a)^{n-k})
 
-- If safe ($S=0$):
+and define the likelihood of performing n mine detections with k detects and n-k non detects for a single cell **given there is no mine there**:
 
 ![formula](https://latex.codecogs.com/png.latex?P(\text{data}\mid%20S%3D0)%20%3D%20b^{k}(1-b)^{n-k})
 
