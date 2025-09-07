@@ -1,6 +1,6 @@
 # Expected Free Energy Minefield Demo
 
-![Posterior sharpening demo](images/posterior.gif)
+<img src="images/posterior.gif" width="400"/>
 
 This repo contains a simple demo of a robot exploring a noisy minefield using **expected free energy** (EFE) and Bayesian statistics.
 
