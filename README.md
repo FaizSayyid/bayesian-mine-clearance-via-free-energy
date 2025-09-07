@@ -26,6 +26,11 @@ The sensor has a confusion matrix:
 
 ## Posterior update
 
+![](https://latex.codecogs.com/png.latex?a%20%3D%20P(o%3D1%20%5Cmid%20S%3D1))  
+![](https://latex.codecogs.com/png.latex?1-a%20%3D%20P(o%3D0%20%5Cmid%20S%3D1))  
+![](https://latex.codecogs.com/png.latex?b%20%3D%20P(o%3D1%20%5Cmid%20S%3D0))  
+![](https://latex.codecogs.com/png.latex?1-b%20%3D%20P(o%3D0%20%5Cmid%20S%3D0))  
+
 - If mine ($S=1$):
 
 ![formula](https://latex.codecogs.com/png.latex?P(\text{data}\mid%20S%3D1)%20%3D%20a^{k}(1-a)^{n-k})
