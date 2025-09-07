@@ -8,6 +8,7 @@
 
 
 *A robot with a noisy sensor explores minefield using Bayesian inference and expected free energy (EFE). The posterior over mines sharpens step by step as the agent balances risk and information gain.*
+
 ---
  
 This repo contains a simple demo of a robot exploring a noisy minefield using **expected free energy** (EFE) and Bayesian statistics.
