@@ -3,11 +3,11 @@
   <img src="images/posterior.gif" width="400"/>
   <img src="images/truth_header.png" width="400"/>
 </p>
-*Left: posterior sharpening over time. Right: hidden ground-truth minefield.*
+
+*Left: posterior sharpening over time. Right: hidden ground-truth minefield*
+
 
 *A robot with a noisy sensor explores minefield using Bayesian inference and expected free energy (EFE). The posterior over mines sharpens step by step as the agent balances risk and information gain.*
-
-
 ---
  
 This repo contains a simple demo of a robot exploring a noisy minefield using **expected free energy** (EFE) and Bayesian statistics.
