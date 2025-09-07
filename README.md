@@ -10,6 +10,8 @@ Written in haste.
 
 ---
 
+### Generative model
+
 Each cell \(s_i \in \{0,1\}\) (mine or no mine) has a Beta–Bernoulli prior:
 
 ![](https://latex.codecogs.com/svg.image?s_i%20%5Csim%20%5Cmathrm%7BBernoulli%7D(%5Cpi),%20%5Cquad%20%5Cpi%20%5Csim%20%5Cmathrm%7BBeta%7D(%5Calpha_0,%5Cbeta_0))
@@ -26,8 +28,8 @@ Rendered as a table:
 
 ---
 
-#### 2. Posterior update
-Given counts of positive and negative observations, the posterior is still Beta:
+### Posterior update
+Given counts of positive and negative observations, the posterior is Beta:
 
 ![](https://latex.codecogs.com/svg.image?%5Cpi%20%5Cmid%20D%20%5Csim%20%5Cmathrm%7BBeta%7D(%5Calpha_0%20&plus;%20%5Csum%20o,%20%5Cbeta_0%20&plus;%20%5Csum(1-o)))
 
@@ -37,7 +39,7 @@ Posterior mean:
 
 ---
 
-#### 3. Expected Free Energy (EFE)
+###  Expected Free Energy (EFE)
 For an action \(a\) (probing a cell):
 
 ![](https://latex.codecogs.com/svg.image?G(a)%20%3D%20%5Cunderbrace%7B%5Cmathbb%7BE%7D_%7Bq(o%7Ca)%7D%5B-%5Cln%20p(o)%5D%7D_%7B%5Ctext%7Bextrinsic%20risk%7D%7D%20-%20%5Cunderbrace%7B%5Cbig(H%5Bq(s)%5D%20-%20%5Cmathbb%7BE%7D_%7Bq(o%7Ca)%7D%5BH(q(s%7Co,a))%5D%5Cbig)%7D_%7B%5Ctext%7Bepistemic%20gain%7D%7D)
