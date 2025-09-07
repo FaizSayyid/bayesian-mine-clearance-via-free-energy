@@ -16,9 +16,11 @@ Written in haste.
 
 Each cell \(s_i \in \{0,1\}\) (mine or no mine) has a bernoulli parameter of 0.1
 
-![](https://latex.codecogs.com/svg.image?s_i%20%5Csim%20%5Cmathrm%7BBernoulli%7D(%5D0.1)
+[![](https://latex.codecogs.com/svg.image?s_i%20%5Csim%20%5Cmathrm%7BBernoulli%7D(%5D0.1)](https://latex.codecogs.com/png.latex?%5Ctheta%20%3D%200.1%2C%20%5Cquad%20S_%7Bij%7D%20%5Csim%20%5Ctext%7BBernoulli%7D(%5Ctheta)%2C%20%5Cquad%20%5Cforall%20(i%2Cj)%20%5Cin%20%5Ctext%7Bgrid%7D)
 
+The joint distribution of the grid is therefore:
 
+https://latex.codecogs.com/png.latex?P(S)%20%3D%20%5Cprod_%7Bi%2Cj%7D%20%5Ctext%7BBernoulli%7D(S_%7Bij%7D%3B%20%5Ctheta)%2C%20%5Cquad%20%5Ctheta%20%3D%200.1
 
 ---
 
