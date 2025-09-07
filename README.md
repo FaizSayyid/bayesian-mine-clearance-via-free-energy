@@ -1,7 +1,7 @@
 # Expected Free Energy Minefield Demo
 <p float="left">
   <img src="images/posterior.gif" width="400"/>
-
+  <img src="images/truth_header.png" width="400"/>
 </p>
 
 *A robot with a noisy sensor explores minefield using Bayesian inference and expected free energy (EFE). The posterior over mines sharpens step by step as the agent balances risk and information gain.*
