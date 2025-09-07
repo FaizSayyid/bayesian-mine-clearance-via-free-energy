@@ -1,4 +1,4 @@
-## Expected Free Energy Minefield Demo
+# Expected Free Energy Minefield Demo
 
 This repo contains a simple demo of a robot exploring a noisy minefield using **expected free energy** (EFE) and Bayesian statistics.
 
@@ -12,7 +12,7 @@ Written in haste.
 
 ---
 
-### Generative model
+## Generative model
 
 Each cell \(s_i \in \{0,1\}\) (mine or no mine) has a Beta–Bernoulli prior:
 
@@ -24,7 +24,7 @@ The sensor has a confusion matrix:
 
 ---
 
-### Posterior update
+## Posterior update
 
 - If mine ($S=1$):
 
@@ -34,7 +34,7 @@ The sensor has a confusion matrix:
 
 ![formula](https://latex.codecogs.com/png.latex?P(\text{data}\mid%20S%3D0)%20%3D%20b^{k}(1-b)^{n-k})
 
----
+
 
 ### Bayes’ rule with those likelihoods
 
@@ -44,9 +44,6 @@ Substituting the likelihoods:
 
 ![formula](https://latex.codecogs.com/png.latex?P(S%3D1%20%5Cmid%20\text{data})%20%3D%20%5Cfrac{p%20a^{k}(1-a)^{n-k}}{p%20a^{k}(1-a)^{n-k}%20+%20(1-p)%20b^{k}(1-b)^{n-k}})
 
----
-
-### Compact boxed form
 
 ![formula](https://latex.codecogs.com/png.latex?\boxed{P(S%3D1%20\mid%20k%20\text{%20pos},%20n-k%20\text{%20neg})%20=%20\frac{p%20a^{k}(1-a)^{n-k}}{p%20a^{k}(1-a)^{n-k}%20+%20(1-p)%20b^{k}(1-b)^{n-k}}})
 
