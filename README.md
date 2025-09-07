@@ -1,7 +1,4 @@
 # Expected Free Energy Minefield Demo
-
-<img src="images/posterior.gif" width="400"/>
-
 <p float="left">
   <img src="images/posterior.gif" width="400"/>
   <img src="images/truth_header.png" width="400"/>
