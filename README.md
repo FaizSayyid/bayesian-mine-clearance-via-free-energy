@@ -18,9 +18,7 @@ Each cell \(s_i \in \{0,1\}\) (mine or no mine) has a Beta–Bernoulli prior:
 
 ![](https://latex.codecogs.com/svg.image?s_i%20%5Csim%20%5Cmathrm%7BBernoulli%7D(%5Cpi),%20%5Cquad%20%5Cpi%20%5Csim%20%5Cmathrm%7BBeta%7D(%5Calpha_0,%5Cbeta_0))
 
-The sensor has a confusion matrix:
 
-![](https://latex.codecogs.com/svg.image?%5Cbegin%7Barray%7D%7Bc%7Ccc%7D%20%26%20%5Ctext%7BSensor%20reads%20%22mine%22%7D%20%26%20%5Ctext%7BSensor%20reads%20%22no%20mine%22%7D%20%5C%5C%5Chline%20%5Ctextbf%7BMine%20(s%3D1)%7D%20%26%20P(o%3D1%5Cmid%20s%3D1)%3D0.95%20%26%20P(o%3D0%5Cmid%20s%3D1)%3D0.05%20%5C%5C%20%5Ctextbf%7BSafe%20(s%3D0)%7D%20%26%20P(o%3D1%5Cmid%20s%3D0)%3D0.30%20%26%20P(o%3D0%5Cmid%20s%3D0)%3D0.70%20%5Cend%7Barray%7D)
 
 ---
 
@@ -42,6 +40,10 @@ Let 1-b be the probability of not detecting a mine when there is no mine present
 
 ![](https://latex.codecogs.com/png.latex?1-b%20%3D%20P(o%3D0%20%5Cmid%20S%3D0))  
 
+In summary the sensor has a confusion matrix:
+
+![](https://latex.codecogs.com/svg.image?%5Cbegin%7Barray%7D%7Bc%7Ccc%7D%20%26%20%5Ctext%7BSensor%20reads%20%22mine%22%7D%20%26%20%5Ctext%7BSensor%20reads%20%22no%20mine%22%7D%20%5C%5C%5Chline%20%5Ctextbf%7BMine%20(s%3D1)%7D%20%26%20P(o%3D1%5Cmid%20s%3D1)%3D0.95%20%26%20P(o%3D0%5Cmid%20s%3D1)%3D0.05%20%5C%5C%20%5Ctextbf%7BSafe%20(s%3D0)%7D%20%26%20P(o%3D1%5Cmid%20s%3D0)%3D0.30%20%26%20P(o%3D0%5Cmid%20s%3D0)%3D0.70%20%5Cend%7Barray%7D)
+
 Now we can define the likelihood of performing n mine detections with k detects and n-k non detects for a single cell **given there is a mine there**:
 
 ![formula](https://latex.codecogs.com/png.latex?P(\text{data}\mid%20S%3D1)%20%3D%20a^{k}(1-a)^{n-k})
@@ -60,13 +62,10 @@ Substituting the likelihoods:
 
 ![formula](https://latex.codecogs.com/png.latex?P(S%3D1%20%5Cmid%20\text{data})%20%3D%20%5Cfrac{p%20a^{k}(1-a)^{n-k}}{p%20a^{k}(1-a)^{n-k}%20+%20(1-p)%20b^{k}(1-b)^{n-k}})
 
-
-![formula](https://latex.codecogs.com/png.latex?\boxed{P(S%3D1%20\mid%20k%20\text{%20pos},%20n-k%20\text{%20neg})%20=%20\frac{p%20a^{k}(1-a)^{n-k}}{p%20a^{k}(1-a)^{n-k}%20+%20(1-p)%20b^{k}(1-b)^{n-k}}})
-
 ---
 
 ###  Expected Free Energy (EFE)
-For an action \(a\) (probing a cell):
+For an action \(a\) (moving in a particular direction compass direction N,S,W,E,NE,NW,SE,SW):
 
 ![](https://latex.codecogs.com/svg.image?G(a)%20%3D%20%5Cunderbrace%7B%5Cmathbb%7BE%7D_%7Bq(o%7Ca)%7D%5B-%5Cln%20p(o)%5D%7D_%7B%5Ctext%7Bextrinsic%20risk%7D%7D%20-%20%5Cunderbrace%7B%5Cbig(H%5Bq(s)%5D%20-%20%5Cmathbb%7BE%7D_%7Bq(o%7Ca)%7D%5BH(q(s%7Co,a))%5D%5Cbig)%7D_%7B%5Ctext%7Bepistemic%20gain%7D%7D)
 
