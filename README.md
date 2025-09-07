@@ -26,7 +26,29 @@ The sensor has a confusion matrix:
 
 ### Posterior update
 
-![posterior](https://latex.codecogs.com/png.latex?p%28s%5Cmid%20o%29%20%5Cpropto%20p%28o%5Cmid%20s%29%20p%28s%29)
+- If mine ($S=1$):
+
+![formula](https://latex.codecogs.com/png.latex?P(\text{data}\mid%20S%3D1)%20%3D%20a^{k}(1-a)^{n-k})
+
+- If safe ($S=0$):
+
+![formula](https://latex.codecogs.com/png.latex?P(\text{data}\mid%20S%3D0)%20%3D%20b^{k}(1-b)^{n-k})
+
+---
+
+### Bayes’ rule with those likelihoods
+
+![formula](https://latex.codecogs.com/png.latex?P(S%3D1%20%5Cmid%20\text{data})%20%3D%20%5Cfrac{P(\text{data}\mid%20S%3D1)P(S%3D1)}{P(\text{data}\mid%20S%3D1)P(S%3D1)%20%2B%20P(\text{data}\mid%20S%3D0)P(S%3D0)})
+
+Substituting the likelihoods:
+
+![formula](https://latex.codecogs.com/png.latex?P(S%3D1%20%5Cmid%20\text{data})%20%3D%20%5Cfrac{p%20a^{k}(1-a)^{n-k}}{p%20a^{k}(1-a)^{n-k}%20+%20(1-p)%20b^{k}(1-b)^{n-k}})
+
+---
+
+### Compact boxed form
+
+![formula](https://latex.codecogs.com/png.latex?\boxed{P(S%3D1%20\mid%20k%20\text{%20pos},%20n-k%20\text{%20neg})%20=%20\frac{p%20a^{k}(1-a)^{n-k}}{p%20a^{k}(1-a)^{n-k}%20+%20(1-p)%20b^{k}(1-b)^{n-k}}})
 
 ---
 
