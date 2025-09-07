@@ -2,6 +2,8 @@
 
 This repo contains a simple demo of a robot exploring a noisy minefield using **expected free energy** (EFE) and Bayesian statistics.
 
+The robot holds a generative model of the world (beta-bernoulli over mine presence and a noisy mine sensor). At each stage we compute the posterior mine probabilities (the risk) and take off the difference between the prior entropy and the evidence wieghted entropy of each outcome of a given move. The move with the lowest expected free energy is then selected.
+
 The robot balances:
 - **Epistemic value**: information gain from probing new cells.
 - **Extrinsic value**: risk of stepping on a mine.
@@ -24,7 +26,7 @@ The sensor has a confusion matrix:
 
 Rendered as a table:
 
-![](https://latex.codecogs.com/svg.image?%5Cbegin%7Barray%7D%7Bc%7Ccc%7D%20%26%20o%3D1%20%26%20o%3D0%5C%5C%5Chline%20s%3D1%20%26%20%5Calpha%20%26%201-%5Calpha%5C%5C%20s%3D0%20%26%20%5Cbeta%20%26%201-%5Cbeta%20%5Cend%7Barray%7D)
+![](https://latex.codecogs.com/svg.image?%5Cbegin%7Barray%7D%7Bc%7Ccc%7D%20%26%20%5Ctext%7BSensor%20reads%20%22mine%22%7D%20%26%20%5Ctext%7BSensor%20reads%20%22no%20mine%22%7D%20%5C%5C%5Chline%20%5Ctextbf%7BMine%20(s%3D1)%7D%20%26%20P(o%3D1%5Cmid%20s%3D1)%3D0.95%20%26%20P(o%3D0%5Cmid%20s%3D1)%3D0.05%20%5C%5C%20%5Ctextbf%7BSafe%20(s%3D0)%7D%20%26%20P(o%3D1%5Cmid%20s%3D0)%3D0.30%20%26%20P(o%3D0%5Cmid%20s%3D0)%3D0.70%20%5Cend%7Barray%7D)
 
 ---
 
