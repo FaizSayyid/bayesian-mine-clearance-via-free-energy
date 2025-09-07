@@ -2,6 +2,10 @@
 
 <img src="images/posterior.gif" width="400"/>
 
+*A robot with a noisy sensor explores minefield using Bayesian inference and expected free energy (EFE). The posterior over mines sharpens step by step as the agent balances risk and information gain.*
+
+---
+
 This repo contains a simple demo of a robot exploring a noisy minefield using **expected free energy** (EFE) and Bayesian statistics.
 
 The robot holds a generative model of the world (beta-bernoulli over mine presence and a noisy mine sensor). At each stage we compute the posterior mine probabilities (the risk) and take off the difference between the prior entropy and the evidence wieghted entropy of each outcome of a given move. The move with the lowest expected free energy is then selected.
