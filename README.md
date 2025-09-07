@@ -14,7 +14,7 @@ Written in haste.
 
 ## Generative model of the minefield
 
-Each cell \(s_i \in \{0,1\}\) (mine or no mine) has a Beta–Bernoulli prior:
+Each cell \(s_i \in \{0,1\}\) (mine or no mine) has a bernoulli parameter of 0.1
 
 ![](https://latex.codecogs.com/svg.image?s_i%20%5Csim%20%5Cmathrm%7BBernoulli%7D(%5Cpi),%20%5Cquad%20%5Cpi%20%5Csim%20%5Cmathrm%7BBeta%7D(%5Calpha_0,%5Cbeta_0))
 
