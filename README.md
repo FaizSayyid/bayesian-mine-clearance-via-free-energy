@@ -37,7 +37,6 @@ The joint distribution of the grid is therefore:
 
 ![](https://latex.codecogs.com/png.latex?P(S)%20%3D%20%5Cprod_%7Bi%2Cj%7D%20%5Ctext%7BBernoulli%7D(S_%7Bij%7D%3B%20%5Ctheta)%2C%20%5Cquad%20%5Ctheta%20%3D%200.1)
 
----
 
 ## Posterior update
 
@@ -123,7 +122,7 @@ The agent picks the action \(a^*\) with lowest EFE, trading off exploration (epi
 
 ---
 
-## Run the notebooks
+## Running the notebooks
 
 You can view the notebooks on GitHub or run them in Colab:
 
