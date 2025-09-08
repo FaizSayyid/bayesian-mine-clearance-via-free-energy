@@ -18,6 +18,10 @@ The robot holds a generative model of the world (beta-bernoulli over mine presen
 The robot balances:
 - **Epistemic gain**: information gain from probing new cells.
 - **Extrinsic risk**: risk of stepping on a mine.
+  
+We consider two models:
+- **naieve_EFE_no_revisit.ipynb** — the robot samples each tile at most once. Revisits confer no additional information.  
+- **EFE_revisit.ipynb** — the robot can re-probe tiles. Revisits confer additional information and yield a sharper posterior.
 
 Written in haste.
 
@@ -65,9 +69,7 @@ and define the likelihood of performing n mine detections with k detects and n-k
 
 ![formula](https://latex.codecogs.com/png.latex?P(\text{data}\mid%20S%3D0)%20%3D%20b^{k}(1-b)^{n-k})
 
-
-
-### Bayes’ rule with those likelihoods
+We can now use Bayes' rule with those likelihoods to form a posterior:
 
 ![formula](https://latex.codecogs.com/png.latex?P(S%3D1%20%5Cmid%20\text{data})%20%3D%20%5Cfrac{P(\text{data}\mid%20S%3D1)P(S%3D1)}{P(\text{data}\mid%20S%3D1)P(S%3D1)%20%2B%20P(\text{data}\mid%20S%3D0)P(S%3D0)})
 
@@ -77,7 +79,7 @@ Substituting the likelihoods:
 
 ---
 
-###  Expected Free Energy (EFE)
+##  Expected Free Energy (EFE)
 For an action \(a\) (moving in a particular direction compass direction N,S,W,E,NE,NW,SE,SW):
 
 ![](https://latex.codecogs.com/svg.image?G(a)%20%3D%20%5Cunderbrace%7B%5Cmathbb%7BE%7D_%7Bq(o%7Ca)%7D%5B-%5Cln%20p(o)%5D%7D_%7B%5Ctext%7Bextrinsic%20risk%7D%7D%20-%20%5Cunderbrace%7B%5Cbig(H%5Bq(s)%5D%20-%20%5Cmathbb%7BE%7D_%7Bq(o%7Ca)%7D%5BH(q(s%7Co,a))%5D%5Cbig)%7D_%7B%5Ctext%7Bepistemic%20gain%7D%7D)
@@ -92,14 +94,14 @@ Entropy of a Bernoulli with parameter \(p\):
 
 The agent picks the action \(a^*\) with lowest EFE, trading off exploration (epistemic gain) against exploitation (low risk).
 
-## Notebooks
-
-- **naieve_EFE_no_revisit.ipynb** — the robot samples each tile at most once. Revisits confer no additional information.  
-- **EFE_revisit.ipynb** — the robot can re-probe tiles. Revisits confer additional information and yield a sharper posterior.
 
 ---
 
-## Single-visit vs. revisit
+## Results
+
+### Brier scores for Single-visit vs. revisit vs. random
+
+### Inferred posteriors and their associated ground truths
 
 **Posterior PDFs**
 
